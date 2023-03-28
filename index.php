@@ -44,8 +44,8 @@
         <section>
             <div class="row">
                 <div class="col-6">
-                    <h1 style="color:red">Currículo: Marcela Leite</h1>
-                    <p>Sou professora de informática. Adoro lecionar programação web. Tenho experiência com banco de dados, etc...</p>
+                    <h1 style="color:red">Currículo: Igor Conaco</h1>
+                    <p>Sou técnico de informática. Adoro lecionar programação web. Tenho experiência com banco de dados, etc...</p>
                     <h2>Meus Conhecimentos</h2>
                     <ul>
                         <li>HTML</li>
@@ -85,58 +85,7 @@
                             <td>joão@mail.com</td>
                         </tr>
                     </table>
-                </div>
-                <div class="col-2" id="colfoto">
-                    <img class='foto' src="assets/img/imagem.jpg" alt="Foto">
-                </div>
-                <div class="col-4" id="formcontato">
-                    <h2>Entre em contato...</h2>
-                    <form action="pages/proposta/acao.php" method="POST">
-                        <input type="hidden" name="loc" value="home">
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="nome">Nome:</label>
-                            </div>
-                            <div class="col-8">
-                                <input type="text" id='nome' name='nome'>
-                            </div>
-                        </div>
-                        <div class="row erro" id="erronome"><div class="col-12">O nome deve possuir pelo menos três letras</div></div>
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="email">E-Mail</label>
-                            </div>
-                            <div class="col-8">
-                                <input type="email" name="email" id="email">
-                            </div>
-                        </div>
-                        <div class="row erro" id="erroemail"><div class="col-12">E-mail informado incorreto</div></div>
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="salario">Proposta de Salário:</label>
-                            </div>
-                            <div class="col-8">
-                                <input type="number" name="salario">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="obs">Observações:</label>
-                            </div>
-                            <div class="col-8">
-                                <textarea name="observacoes" id="" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <button type="submit" name='acao' id='acao' value='salvar'>Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    
+                
         <footer>
             <div class="row">
                 <div class="col-12">

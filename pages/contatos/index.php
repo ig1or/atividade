@@ -89,9 +89,9 @@
                                     $consulta=$conexao->query("SELECT*FROM cep;");
                                     while($linha=$consulta->fetch(PDO::FETCH_ASSOC)){
                                         if ($linha['id'] == $dados['idCidade']) {
-                                            echo "<option value='".$linha['id']."' selected>".$linha['estado']."</option>";
+                                            echo "<option value='".$linha['id']."' selected>".$linha['nome']."</option>";
                                         }else{
-                                            echo "<option value='".$linha['id']."'>".$linha['estado']."</option>";
+                                            echo "<option value='".$linha['id']."'>".$linha['nome']."</option>";
                                         }
                                     }
 
@@ -135,8 +135,13 @@
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>email</th>
+                            <th>Obs</th>
                             <th>Telefone</th>
-                            <th>Destalhes</th>
+                            <th>Data nascimento</th> 
+                            <th>Código da Cidade</th>  
+                            <th>Vivo</th>  
                             <th>Editar</th>
                             <th>Excluir</th>
                         </tr>
@@ -149,9 +154,14 @@
                                 while($linha=$consulta->fetch(PDO::FETCH_ASSOC)){
                                     echo "
                                         <td>{$linha['id']}</td>
-                                        <td>{$linha['nome']} {$linha['sobrenome']}</td>
+                                        <td>{$linha['nome']} </td>
+                                        <td>{$linha['sobrenome']}</td>
+                                        <td>{$linha['email']}</td>
+                                        <td>{$linha['observacoes']}</td>
                                         <td>{$linha['telefone']}</td>
-                                        <td><a class='btn btn-info' href='show.php?id={$linha['id']}'>Detalhes</a></td>
+                                        <td>{$linha['dataNascimento']}</td>
+                                        <td>{$linha['idCidade']}</td>
+                                        <td>{$linha['vivo']}</td>
                                         <td><a class='btn btn-warning' href='index.php?acao=editar&id={$linha['id']}'>Editar</a></td>
                                         <td><a class='btn btn-danger' onClick = 'return excluir();' href='acao.php?acao=excluir&id={$linha['id']}'.>Excluir</a></td>
                                         </tr>\n

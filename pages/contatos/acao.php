@@ -64,7 +64,7 @@
         $nome = isset($_POST['nome']) ? $_POST['nome']: '';
         $sobrenome = isset($_POST['sobrenome']) ? $_POST['sobrenome']: '';
         $email = isset($_POST['email']) ? $_POST['email']: 0;
-        $telefone = isset($_POST['telefone']) ? $_POST['telefone']: '';
+        $telefone = isset($_POST['telefone']) ? $_POST['telefone']: 0;
         $observacoes = isset($_POST['observacoes']) ? $_POST['observacoes']: '';
         $dataNascimento = isset($_POST['dataNascimento']) ? $_POST['dataNascimento']: 0;
         $vivo = isset($_POST['vivo']) ? $_POST['vivo']: '';

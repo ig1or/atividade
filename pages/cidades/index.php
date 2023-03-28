@@ -80,7 +80,7 @@
                             <th>ID</th>
                             <th>Nome</th>
                             <th>Estado</th>
-                            <th>Destalhes</th>
+                            <th>Detalhes</th>
                             <th>Editar</th>
                             <th>Excluir</th>
                         </tr>
